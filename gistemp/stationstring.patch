@@ -1,0 +1,16 @@
+262c262
+<     Py_ssize_t me_pos;
+---
+>     int me_pos  ; /* Py_ssize_t me_pos; */
+464,465c464,465
+<     Py_ssize_t j;
+<     Py_ssize_t ppos;
+---
+>     int j ; /* Py_ssize_t j; */
+>     int ppos; /* Py_ssize_t ppos; */
+628,629c628,629
+< PyMODINIT_FUNC
+< initstationstring(void)
+---
+> void
+> initstationstring()
